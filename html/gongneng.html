@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>魔艺—功能</title>
+	<link rel="stylesheet" href="../css/gongneng.css">
+	<script src="../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<div class="top">
+		<div id="bgc"></div>
+		<a href="index.html"><img src="../images/logo.png" alt=""></a>
+		<div class="top_right">
+			<a href="daili.html" id="join">代理加盟</a>
+			<a href="bangzhu.html">帮助</a>
+			<div class="about">关于
+				<div class="what">
+					<a href="about.html" id="uemo">什么是UEmo
+						<img src="../images/a_arrow.png" alt="">
+					</a>
+					<a href="gongneng.html" id="function">功能
+						<img src="../images/a_arrow.png" alt="">
+					</a>
+					<a href="#" id="copyright">版权声明
+						<img src="../images/a_arrow.png" alt="">
+					</a>
+				</div>
+			</div>
+			<a href="jiage.html">价格</a>
+			<a href="dmjr.html">案例</a>
+			<a href="pro.html">产品</a>
+			<a href="index.html">首页</a>
+		</div>
+	</div>
+	<div class="first">
+		<h3>功能</h3>
+		<p>UEMO极速建站</p>
+		<li>预算低、周期短、需求高，怎么可能？UEmo让一切不可能变成可能！魔艺（UEmo）极速建站让企业或个人拥有：交互、设计及体验于一身的高逼格网站。后台操作<a href="#">使用说明</a></li>
+	</div>
+	<img src="../images/gongneng.png" alt="" class="banner">
+	<div class="exp exp1">
+		<img src="../images/icong_1.png" alt="">
+		<p><span>首页版块</span>—— 首页除幻灯，其它版块可根据企业需求拖拽排序，并隐藏模块！<a href="#">视频教程</a></p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_2.png" alt="">
+		<p><span>幻灯版块</span>—— 自行设置幻灯高度或全屏，自由调试幻灯播放时间、排序、及播放形式。如（左右切换、渐隐渐现）<a href="#">视频教程</a></p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_3.png" alt="">
+		<p><span>服务版块</span>—— 首页及导航是否显示自定义，首页差背景图自定义，模块名称自定义、可嵌入第三方视频<a href="#">视频教程</a></p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_4.png" alt="">
+		<p><span>联系版块</span>—— 首页是否显示自定义，首页差背景图自定义，模块名称自定义、在线客服可选择性开启 <a href="#">视频教程</a></p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_5.png" alt="">
+		<p><span>导航版块</span>—— 拖拽排序自定义、创建下拉菜单自定义、创建连接自定义<a href="#">视频教程</a></p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_6.png" alt="">
+		<p><span>基本设置</span>—— 可设置网站名称、关键字、描述等（便于百度抓取）可添加IE栏IOS小图标<a href="#">视频教程</a></p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_7.png" alt="">
+		<p><span>案例版块</span>—— 首页及导航是否显示自定义，首页差背景图自定义，模块名称自定义，可创意分类-子分类-关键字、列表支持翻页</p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_8.png" alt="">
+		<p><span>页面模块</span>—— 首页及导航是否显示自定义，首页差背景图自定义，模块名称自定义、可无限创建、可嵌入第三方视频</p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_9.png" alt="">
+		<p><span>新闻模块</span>—— 首页及导航是否显示自定义，首页差背景图自定义，模块名称自定义，可创意分类、可嵌入第三方视频、列表支持翻页</p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_10.png" alt="">
+		<p><span>团队模块</span>—— 首页及导航是否显示自定义，首页差背景图自定义，模块名称自定义</p>
+	</div>
+	<div class="exp">
+		<img src="../images/icong_11.png" alt="">
+		<p><span>嵌入视频</span>—— 视频地址<a href="#">http://cdn.uehtml.com/shipin/qrsp.mp4</a></p>
+	</div>
+	<div class="bottom">
+		<p>COPYRIGHT(&copy;)2016魔艺极速建站-UEMO企业版-优艺客旗下品牌.京ICP备12019481号-5</p>
+	</div>
+	<a href="#" class="qq"></a>
+	<a href="#" class="weibo"></a>
+	<a href="#" class="phone"></a>
+	<div id="back"></div>
+</body>
+<script>
+	var bgc=document.getElementById('bgc');
+	$(window).scroll(function(){
+			var ele= $(document).scrollTop()||$("body").scrollTop();
+			if(ele>30){
+				bgc.style.height="62px";
+				back.style.display="block";
+			}else{
+				bgc.style.height="0";
+				back.style.display="none";
+			}
+		})
+	$("#back").click(function(){	
+			var ele= $(document)||$("body");
+			var x = 0,y=0;
+			var t=setInterval(function(){
+			x+=50;
+			y = ele.scrollTop()-x;
+			if(y<=0){
+				clearInterval(t);
+				ele.scrollTop(0);
+			}else{
+		 		ele.scrollTop(y);
+			}	
+		},30)
+	})
+</script>
+</html>

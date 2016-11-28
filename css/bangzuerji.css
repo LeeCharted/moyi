@@ -1,0 +1,291 @@
+*{
+	margin:0;
+	padding: 0;
+	border:none;
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+.help{
+	margin-top: 135px;
+	width: 100%;
+}
+.help1{
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 24px;
+	color: #444444;
+	font-weight: bold;
+}
+.help_font{
+	margin-top: 14px;
+	width: 100%;
+}
+.help_font1{
+	width: 88px;
+	margin:0 auto;
+	text-align: center;
+	font-size: 10px;
+	color: #ccc1c6;
+}
+.help_font2{
+	margin-top: 65px;
+	width: 100%;
+}
+.help_font3{
+	width: 1040px;
+	margin:0 auto;
+	text-align: center;
+	font-size: 12px;
+	color: #6a6a6a;
+}
+.help_font4{
+	margin-top: 20px;
+	width: 100%;
+}
+.help_font5{
+	width: 650px;
+	margin:0 auto;
+	text-align: center;
+	font-size: 15px;
+	color: #6a6a6a;
+}
+.help_font6{
+	font-size: 15px;
+	color: #ff0000;
+}
+.help_font7{
+	text-decoration: none;
+	font-size: 15px;
+	color: #00cbff;
+}
+.over{
+	width: 100%;
+	height: 350px;
+}
+.overbig{
+	margin: 0 auto;
+	width: 680px;
+	height: 350px;
+}
+.overleft{
+	float: left;
+	width: 238px;
+	height: 315px;
+	margin-top: 50px;
+	text-align: center;
+}
+.overright{
+	float: right;
+	width: 238px;
+	height: 315px;
+	margin-top: 50px;
+	text-align: center;
+}
+.overfont1{
+	font-weight: bold;
+	margin-top: 25px;
+	font-size: 18px;
+	color: #000000;
+}
+.overfont2{
+	margin-top: 8px;
+	font-size: 12px;
+	color: #545454;
+}
+.overfont3{
+	font-weight: bold;
+	margin-top: 25px;
+	font-size: 18px;
+	color: #000000;
+}
+.overfont4{
+	margin-top: 8px;
+	font-size: 12px;
+	color: #545454;
+}
+.overimg{
+	margin-top: 160px;
+	margin-left: 70px;
+}
+.overimg2{
+	transition: all 0.5s;
+}
+.overleft:hover .overimg2{
+	transform: scale(1.1);
+}
+.overright:hover .overimg2{
+	transform: scale(1.1);
+}
+.food{
+	width: 100%;
+	height: 150px;
+}
+.top{
+	width: 100%;
+	height: 62px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#bgc{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	box-shadow: 0px 1px 5px #eaeaea;
+	background-color: #fff;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.top img{
+	position: absolute;
+	top: 12px;
+	left: 40px;
+	width: 120px;
+	height: 40px;
+}
+.top_right{
+	position: absolute;
+	width: 520px;
+	height: 62px;
+	top: 0;
+	right: 30px;
+}
+.top_right a{
+	float: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 14px;
+	line-height: 62px;
+	margin-right: 35px;
+}
+#join{
+	width: 96px;
+	height: 32px;
+	background-color: #00c0ff;
+	color: #fff;
+	margin-top: 15px;
+	line-height: 32px;
+	border-radius: 16px;
+	text-align: center;
+}
+.top_right a:hover{
+	color: #00cbff;
+}
+#help{
+	color: #00cbff;
+}
+.about{
+	float: right;
+	cursor: pointer;
+	color: #999;
+	width: 62px;
+	font-size: 14px;
+	line-height: 62px;
+}
+.about:hover{
+	color: #00cbff;
+}
+.what{
+	position: absolute;
+	box-shadow: 2px 5px 5px #eaeaea;
+	width: 170px;
+	height: 147px;
+	border-top: 3px solid #00c0ff;
+	top: 90px;
+	left: 192px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+.about:hover .what{
+	visibility: initial;
+	opacity: 1;
+	top: 62px;
+}
+.what a{
+	float: left;
+	font-size: 12px;
+	border-top: 1px solid #e8e8e8;
+	width: 170px;
+	height: 49px;
+	margin-right: 0;
+	line-height: 49px;
+	text-indent: 30px;
+	-webkit-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+.what a:hover{
+	background-color: #f4f4f4;
+	text-indent: 40px;
+}
+.what a:hover img{
+	display: block;
+}
+#uemo{
+	border: 0;
+}
+.what img{
+	position: absolute;
+	width: 6px;
+	height: 8px;
+	top: 20px;
+	left: 145px;
+	display: none;
+}
+#function img{
+	top: 69px;
+}
+#copyright img{
+	top: 119px;
+}
+.bottom{
+	width: 100%;
+	height: 60px;
+	margin-top: 100px;
+	background-color: #17171a;
+}
+.bottom p{
+	width: 100%;
+	text-align: center;
+	line-height: 60px;
+}
+.qq{
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	background-image: url(../images/qq.jpg);
+	right: 15px;
+	top: 50%;
+	border-radius: 3px;
+}
+.weibo{
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/weibo.jpg);
+	right: 0;
+	bottom: 110px;
+}
+.phone{
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/phone.jpg);
+	right: 0;
+	bottom: 80px;
+}
+#back{
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/top.jpg);
+	right: 0;
+	bottom: 40px;
+	display: none;
+}

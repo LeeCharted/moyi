@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>魔艺—没有设计师怎么办？</title>
+	<link rel="stylesheet" href="../css/bangzuerji.css">
+	<script src="../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+	<div class="top">
+		<div id="bgc"></div>
+		<a href="index.html"><img src="../images/logo.png" alt=""></a>
+		<div class="top_right">
+			<a href="daili.html" id="join">代理加盟</a>
+			<a href="bangzhu.html" id="help">帮助</a>
+			<div class="about">关于
+				<div class="what">
+					<a href="about.html" id="uemo">什么是UEmo
+						<img src="../images/a_arrow.png" alt="">
+					</a>
+					<a href="gongneng.html" id="function">功能
+						<img src="../images/a_arrow.png" alt="">
+					</a>
+					<a href="#" id="copyright">版权声明
+						<img src="../images/a_arrow.png" alt="">
+					</a>
+				</div>
+			</div>
+			<a href="jiage.html">价格</a>
+			<a href="dmjr.html">案例</a>
+			<a href="pro.html">产品</a>
+			<a href="index.html">首页</a>
+		</div>
+	</div>
+	<div class="help">
+		<p class="help1">没有专业设计师怎么办？</p>
+	</div>
+	<div class="help_font">
+		<p class="help_font1">2616-09-07</p>
+	</div>
+	<div class="help_font2">
+		<p class="help_font3">好的网站不仅需要交互及用户体验、更需要用图片来引导用户，网页是由图片、文字、链接、多媒体组成，那么在这些元素中，图片起到了至关重要的作用！但没有设计师怎么办？</p>
+	</div>
+	<div class="help_font4">
+		<p class="help_font5">UEMO极速建站结合UE设计平台为您提供为您提供<span class="help_font6">4万</span>多个网页设计师, <a class="help_font7" href="#">点击查找设计师→</a></p>
+	</div>
+	<div class="over">
+		<div class="overbig">
+			<div class="overleft">
+				<img class="overimg2" src="../images/uemb.png" alt="">
+				<p class="overfont1">Uemo极速建站</p>
+				<p class="overfont2">让建站更人性化</p>
+			</div>
+			<img class="overimg" src="../images/jiaocha.png" alt="">
+			<div class="overright">
+				<img class="overimg2" src="../images/uemb2.png" alt="">
+				<p class="overfont3">UE设计平台</p>
+				<p class="overfont4">旗下拥有国内40000多个网页设计师</p>
+			</div>
+		</div>
+	</div>
+	<div class="food"></div>
+	<div class="bottom">
+		<p>COPYRIGHT(&copy;)2016魔艺极速建站-UEMO企业版-优艺客旗下品牌.京ICP备12019481号-5</p>
+	</div>
+	<a href="#" class="qq"></a>
+	<a href="#" class="weibo"></a>
+	<a href="#" class="phone"></a>
+	<div id="back"></div>
+</body>
+<script>
+	var bgc=document.getElementById('bgc');
+	$(window).scroll(function(){
+			var ele= $(document).scrollTop()||$("body").scrollTop();
+			if(ele>30){
+				bgc.style.height="62px";
+				back.style.display="block";
+			}else{
+				bgc.style.height="0";
+				back.style.display="none";
+			}
+		})
+	$("#back").click(function(){	
+			var ele= $(document)||$("body");
+			var x = 0,y=0;
+			var t=setInterval(function(){
+			x+=50;
+			y = ele.scrollTop()-x;
+			if(y<=0){
+				clearInterval(t);
+				ele.scrollTop(0);
+			}else{
+		 		ele.scrollTop(y);
+			}	
+		},30)
+	})
+</script>
+</html>
